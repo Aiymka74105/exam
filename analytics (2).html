@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Аналитика — The Look Lab</title>
+
+  <!-- Ваш основной CSS -->
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="var.css"/>
+  <!-- Переопределения, если есть -->
+  <link rel="stylesheet" href="custom-overrides.css"/>
+
+  <!-- Bootstrap, AOS, Boxicons, Fonts — как в index.html -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'/>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@500&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Shalimar&display=swap" rel="stylesheet"/>
+
+  <!-- Небольшие inline-стили для аналitika, вписанные в общий дизайн -->
+  <style>
+    #analytics {
+      max-width: 1000px;
+      margin: 80px auto;
+      position: relative;
+      padding: 0 15px;
+    }
+    #analytics .main-button {
+      position: absolute;
+      top: -50px;
+      right: 0;
+      padding: 8px 16px;
+      background-color: #264143;
+      color: #FDFAF9;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color .3s;
+    }
+    #analytics .main-button:hover {
+      background-color: #e99f4c;
+    }
+    #analytics .chart-container {
+  /* Уже есть: background, padding, box-shadow */
+  overflow: hidden;            /* Обрезаем всё, что за границами */
+  position: relative;
+}
+
+#analytics {
+  max-width: 1000px;
+  margin: 10px auto; /* стало меньше */
+  position: relative;
+  padding: 0 10px;
+}
+
+
+.chartjs-legend {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.8);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #264143;
+  z-index: 10;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar (копия из index.html) -->
+  <nav class="navbar navbar-expand-md" id="navbar-color" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" style="background-color: #fef4ec;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" id="logo">
+        <img src="./image/logo.png" width="70" alt="Logo">
+        <span>The Look Lab</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <img src="./image/menu.png" alt="Menu">
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="analytics (2).html">Analytics</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="login_text">
+        <ul>
+          <li><a href="login.html"><img src="./image/user-icon.png" alt="User"></a></li>
+          <li><a href="cart.html"><img src="./image/cart.png" alt="Cart"></a></li>
+          <li><a href="#search-popup"><img src="./image/search-icon.png" alt="Search"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search popup (как на основном сайте) -->
+  <div id="search-popup" class="modal">
+    <input id="search-field" type="search" placeholder="Search">
+    <a href="#" id="search-symbol"><img src="./image/search-icon.png" alt="Go"></a>
+    <a href="#" class="close-button">&times;</a>
+  </div>
+
+ <!-- Начало блока аналитики -->
+<section id="analytics" class="container py-5" data-aos="fade-up" data-aos-duration="1500">
+  
+<!-- Секция Analytics: вставьте перед футером -->
+<section id="analytics" class="container py-5">
+  <section id="analytics" class="container py-5" data-aos="fade-up" data-aos-duration="1500">
+
+    <h3 class="mt-5 mb-3">Категории продукции</h3>
+    <table class="table table-bordered table-striped" style="background-color: #fff; border-radius: 10px; overflow: hidden;">
+      <thead class="thead-dark">
+        <tr>
+          <th>Категория</th>
+          <th>Количество</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Тоники</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Эссенции</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Кремы</td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <td>Маски</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>Солнцезащитные средства</td>
+          <td>18</td>
+        </tr>
+      </tbody>
+    </table>
+   <!-- Список с художественными маркерами -->
+   <h3 class="mt-5 mb-3">Преимущества покупки у нас</h3>
+   <ul style="list-style: none; padding-left: 0;">
+     <li style="position: relative; padding-left: 2rem; margin-bottom: 1rem;">
+       <span style="position: absolute; left: 0; top: 0;">💄</span>
+       Широкий ассортимент брендов
+     </li>
+     <li style="position: relative; padding-left: 2rem; margin-bottom: 1rem;">
+       <span style="position: absolute; left: 0; top: 0;">🚚</span>
+       Быстрая доставка по Казахстану
+     </li>
+     <li style="position: relative; padding-left: 2rem; margin-bottom: 1rem;">
+       <span style="position: absolute; left: 0; top: 0;">🎁</span>
+       Подарки при покупке от 10 000 ₸
+     </li>
+   </ul>
+    <!-- Диаграмма -->
+    <div class="chart-container mb-5">
+      <div id="polarLegend" class="chartjs-legend"></div>
+      <canvas id="polarChart"></canvas>
+    </div>
+  
+    
+  
+  </section>
+  
+    
+  <!-- Столбчатая диаграмма 
+  <div class="chart-container">
+    <h2>Продажи по дням недели</h2>
+     Здесь и рисуется barChart 
+    <canvas id="barChart"></canvas> -->
+  </div>
+
+</section>
+
+</section>
+<!-- Конец блока аналитики -->
+
+  <!-- Footer (копия из index.html) -->
+  <footer id="footer" data-aos="fade-up" data-aos-duration="1500">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 footer-contact">
+            <h3>The Look Lab</h3>
+            <p>Lahore<br>Punjab<br>Pakistan</p>
+            <strong>Phone: +92 3019465090</strong><br>
+            <strong>Email: info@thelooklab.com</strong>
+          </div>
+          <div class="col-lg-4 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i><a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="products.html">Products</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="about.html">About</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 footer-links">
+            <h4>Our Social Network</h4>
+            <p>Reach out for complaints or assistance.</p>
+            <div class="socail-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; 2025 <strong>The Look Lab</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <!-- скрипты -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="analytics.js"></script>
+</body>
+</html>

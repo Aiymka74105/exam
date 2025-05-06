@@ -1,0 +1,57 @@
+:root {
+    --bg-color: #fef4ec;
+    --text-color: #264143;
+    --nav-bg: #ffffff;
+    --btn-bg: #ffffff;
+    --btn-text: #264143;
+    --section-bg: #ffffff00;
+    --card-bg: #ffffff;
+    --card-border: #f693ad;
+    --link-hover: #e99f4c;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  #navbar-color {
+    background-color: var(--nav-bg) !important;
+  }
+  
+  .nav-link {
+    color: var(--text-color) !important;
+  }
+  .nav-link:hover {
+    color: var(--link-hover) !important;
+  }
+  
+  .btn, .main-button {
+    background-color: var(--btn-bg) !important;
+    color: var(--btn-text) !important;
+    border-color: var(--text-color) !important;
+  }
+  .btn:hover, .main-button:hover {
+    background-color: var(--link-hover) !important;
+    color: var(--btn-bg) !important;
+  }
+  
+  section, .container, .chart-container {
+    background-color: var(--section-bg);
+  }
+  
+  .card, .chart-container {
+    background-color: var(--card-bg);
+    border: 2px solid var(--card-border);
+    box-shadow: 0 4px 12px rgba(38,65,67,0.1);
+  }
+  
+  #footer {
+    background-color: #111111 !important;
+    color: #d0d0d0 !important;
+  }
+  #footer .footer-top {
+    background-color: #1c1c1c !important;
+  }
+  
+  

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Аналитика продаж — The Look Lab</title>
+
+  <!-- Ваши стили -->
+  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="custom-overrides.css">
+
+  <!-- Inline-стили для контейнера диаграмм (опционально) -->
+  <style>
+    #analytics {
+      max-width: 900px;
+      margin: 60px auto;
+      position: relative;
+    }
+    #analytics .main-button {
+      position: absolute;
+      top: -50px;
+      right: 0;
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color .3s;
+    }
+    #analytics .main-button:hover {
+      background-color: #45a049;
+    }
+    #analytics .chart-container {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+    #analytics h2 {
+      color: #e91e63;
+      margin-bottom: 20px;
+    }
+    canvas {
+      width: 100% !important;
+      height: 300px !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Навбар вашего сайта -->
+  <nav>
+    <!-- ... -->
+  </nav>
+
+  <!-- Раздел с диаграммами -->
+  <section id="analytics">
+    <a href="index.html" class="main-button">Главная</a>
+
+    <div class="chart-container">
+      <h2>Популярность категорий корейской косметики</h2>
+      <canvas id="polarChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+      <h2>Продажи по дням недели</h2>
+      <canvas id="barChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Футер вашего сайта -->
+  <footer>
+    <!-- ... -->
+  </footer>
+
+  <!-- Подключаем Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Ваш файл с логикой диаграмм -->
+  <script src="analytics.js"></script>
+</body>
+</html>

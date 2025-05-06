@@ -1,0 +1,55 @@
+:root {
+  --bg-color: #2e2e2e;
+  --text-color: #e0d4ff;
+  --nav-bg: #264143;
+  --btn-bg: #264143;
+  --btn-text: #FDFAF9;
+  --section-bg: #3a3a3a;
+  --card-bg: #3f3f3f;
+  --card-border: #e99f4c;
+  --link-hover: #f693ad;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+#navbar-color {
+  background-color: var(--nav-bg) !important;
+}
+
+.nav-link {
+  color: var(--btn-text) !important;
+}
+.nav-link:hover {
+  color: var(--link-hover) !important;
+}
+
+.btn, .main-button {
+  background-color: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+  border-color: var(--btn-text) !important;
+}
+.btn:hover, .main-button:hover {
+  background-color: var(--link-hover) !important;
+  color: var(--btn-bg) !important;
+}
+
+section, .container, .chart-container {
+  background-color: var(--section-bg);
+}
+
+.card, .chart-container {
+  background-color: var(--card-bg);
+  border: 2px solid var(--card-border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+footer, .footer-top {
+  background-color: #111111;
+  color: #d0d0d0;
+}
+.footer-links a:hover {
+  color: var(--link-hover) !important;
+}

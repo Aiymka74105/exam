@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products &ndash; The Look Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image" href="./image/logo.png">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <!-- bootstrap links -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Shalimar&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- icons -->
+
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animation -->
+</head>
+
+<body>
+   
+        <nav class="navbar navbar-expand-md" id="navbar-color"  data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        style="background-color: #fef4ec;">   
+
+            <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html" id="logo"><img src="./image/logo.png" alt="" width="70px"> 
+                <span >The Look Lab</span> </a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span><img src="./image/menu.png" alt=""></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse-sm navbar-collapse-md navbar-collapse" id="collapsibleNavbar" >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="analytics (2).html">Analytics</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <form class="form-inline ">
+                <div class="login_text">
+                   <ul>
+                      <li><a href="login.html"><img src="./image/user-icon.png"></a></li>
+                      <li><a href="cart.html"><img src="./image/cart.png"></a></li>
+                      <li><a href="#search-popup"><img src="./image/search-icon.png"></a></li>
+                   </ul>
+                </div>
+             </form>
+
+         </div>
+        </nav>
+        <!-- navbar end -->
+  
+<!-- search popup -->
+<div id="search-popup" class="modal">
+    <input id="search-field" type="search" placeholder="Search">
+    <a href="#" id="search-symbol"><img src="./image/search-icon.png"></a>
+<a href="#" class="close-button">&times;</a>
+</div>
+<!-- search popup -->
+
+    <!-- products content -->
+    <div class="container" data-aos="fade-up" id="p-container"
+    data-aos-duration="1500">
+    <h1 class="text-center" id="product-h1">PRODUCTS</h1>
+    <br>
+    <div id="product">
+        <div class="product-box"> 
+         <div class="product-img">
+            <a href="#eye7-popup"><img src="./image/eye-7.jpg" alt="" class="img-responsive"></a>
+         </div>
+         <div class="product-desc">
+            <h4>Mini Eyeshadow Kit</h4>
+            <p class="desc">COLOURPOP</p>
+            <p class="price">Rs. 810.00</p>
+            <br style="clear: both;">
+            <br>
+            <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+            <br>
+            <br style="clear: both;">
+         </div>
+        </div>
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#face1-popup"><img src="./image/face-1.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Mac Concealer & Sponge</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 1650.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#lips1-popup"><img src="./image/lips-1.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Moist Lip Gloss</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 515.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+    
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#lips6-popup"><img src="./image/lips-6.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Peppermint Lip Balm</h4>
+               <p class="desc">COLOURPOP</p>
+               <p class="price">Rs. 745.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+
+        <div class="product-box "> 
+            <div class="product-img">
+                <a href="#face2-popup"><img src="./image/face-2.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Matte Pressed Powder</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 550.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#eye3-popup"><img src="./image/eye-3.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Multi-Face Palette</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 1190.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+        
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#eye1-popup"><img src="./image/eye-1.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Liquid Pen Eyeliner</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 525.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+    
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#face5-popup"><img src="./image/face5.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Contour Kit</h4>
+               <p class="desc">COLOURPOP</p>
+               <p class="price">Rs. 870.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+
+        <div class="product-box "> 
+            <div class="product-img">
+                <a href="#lips2-popup"><img src="./image/lips-2.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Care Plus Lip Oil</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 280.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#lips7-popup"><img src="./image/lips-7.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Lip Scrub & Lip Mask</h4>
+               <p class="desc">COLOURPOP</p>
+               <p class="price">Rs. 800.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#face3-popup"><img src="./image/face-3.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Matte Foundation</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 550.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+    
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#eye4-popup"><img src="./image/eye-4.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Eyeshadow Palette</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 1050.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+
+        <div class="product-box "> 
+            <div class="product-img">
+                <a href="#eye2-popup"><img src="./image/eye-2.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Waterproof Night Mascara</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 450.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#lips4-popup"><img src="./image/lips-4.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>2 in 1 Lipstick & Lipsgloss</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 950.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#face4-popup"><img src="./image/face-4.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Mini Foundation</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 240.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#eye5-popup"><img src="./image/eye-5.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>12 Pan Eyeshadow Palette</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 1650.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#eye6-popup"><img src="./image/eye-6.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>2 in 1 Eyebrow Gel & Powder</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 1075.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#lips3-popup"><img src="./image/lips-3.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Velvet Matte Lipstick</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 825.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+        <div class="product-box"> 
+            <div class="product-img">
+                <a href="#lips5-popup"><img src="./image/lips-5.jpg" alt="" class="img-responsive"></a>
+            </div>
+            <div class="product-desc">
+               <h4>Watery Glam Lip Gloss</h4>
+               <p class="desc">PINKFLASH</p>
+               <p class="price">Rs. 845.00</p>
+               <br style="clear: both;">
+               <br>
+               <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+               <br>
+               <br style="clear: both;">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- products content -->
+    
+    <!-- product modals content-->
+    <div id="eye7-popup" class="modal">
+        <div class="item-popup">
+            <div><img src="./image/eye-7.jpg" alt="" class="img-responsive"></div>
+            <div class="product-desc">
+                <h4>Mini Eyeshadow Kit</h4>
+                <p class="detail">Brand: COLOURPOP<br>
+                Price: Rs. 810.00<br>
+                Product Code: E-07</p>
+                <p style="text-align: justify;">Highly pigmented shadow that applies evenly and feels ultra-velvety and silky.
+                     This long wearing formula contains a unique combination of softer powders which adheres easily to the eyes,
+                      gives a soft focus effect, and blends smoothly and evenly.</p>
+                <div class="quantity-selector">
+                    <p class="detail">Quantity:</p>
+                    <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+                </div>
+                <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+            </div>
+        </div>
+        <a href="#" class="close-button">&times;</a>
+        </div>
+    
+        <div id="face1-popup" class="modal">
+            <div class="item-popup">
+                <div><img src="./image/face-1.jpg" alt="" class="img-responsive"></div>
+                <div class="product-desc">
+                    <h4>Mac Concealer & Sponge</h4>
+                    <p class="detail">Brand: PINKFLASH<br>
+                    Price: Rs. 1650.00<br>
+                    Product Code: F-01</p>
+                    <p style="text-align: justify;">Instantly conceal, cover, correct and contour with this long wearing,
+                         full coverage natural matte concealer. the lightweight blendable formula applies smoothly and 
+                         seamlessly covers dark circles, blemishes, redness and discoloration with one swipe. the 100% 
+                         cruelty-free, vegan formula is infused with marine extracts to hydrate and protect delicate under eyes.</p>
+                    <div class="quantity-selector">
+                        <p class="detail">Quantity:</p>
+                        <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+                    </div>
+                    <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+                </div>
+            </div>
+            <a href="#" class="close-button">&times;</a>
+        </div>
+        <div id="lips1-popup" class="modal">
+            <div class="item-popup">
+                <div><img src="./image/lips-1.jpg" alt="" class="img-responsive"></div>
+                <div class="product-desc">
+                    <h4>Moist Lip Gloss</h4>
+                    <p class="detail">Brand: PINKFLASH<br>
+                    Price: Rs. 515.00<br>
+                    Product Code: L-01</p>
+                    <p style="text-align: justify;">It brings long-lasting moisturizing effect to dry lips. 
+                        After use, the lips are plump. The non-sticky formula makes your lips light and soft. 
+                        Perfect for wearing alone or layered over lipstick for a bold lip statement.</p>
+                    <div class="quantity-selector">
+                        <p class="detail">Quantity:</p>
+                        <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+                    </div>
+                    <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+                </div>
+            </div>
+            <a href="#" class="close-button">&times;</a>
+        </div>
+        <div id="lips6-popup" class="modal">
+            <div class="item-popup">
+                <div><img src="./image/lips-6.jpg" alt="" class="img-responsive"></div>
+                <div class="product-desc">
+                    <h4>Peppermint Lip Balm</h4>
+                    <p class="detail">Brand: COLOURPOP<br>
+                    Price: Rs. 745.00<br>
+                    Product Code: L-06</p>
+                    <p style="text-align: justify;">Our hybrid gloss balm hydrates like a lip balm, shines like a gloss,
+                         visibly plumps lips and delivers buildable colour for a super juicy pout.
+                          This comfy, non-sticky formula is infused with hydrating Hyaluronic Acid,
+                           moisturizing Tucuma Butter, feel-good plumping Ginger and Ceramides + Peptides 
+                           to visibly plump lips and smooth lip lines for the ultimate plumping effect.</p>
+                    <div class="quantity-selector">
+                        <p class="detail">Quantity:</p>
+                        <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+                    </div>
+                    <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+                </div>
+            </div>
+            <a href="#" class="close-button">&times;</a>
+        </div>
+        <div id="face2-popup" class="modal">
+            <div class="item-popup">
+                <div><img src="./image/face-2.jpg" alt="" class="img-responsive"></div>
+                <div class="product-desc">
+                    <h4>Matte Pressed Powder</h4>
+                    <p class="detail">Brand: PINKFLASH<br>
+                    Price: Rs. 550.00<br>
+                    Product Code: F-02</p>
+                    <p style="text-align: justify;">Pink Flash Pressed Powder is richly pigmented, long lasting and highly bendable.
+                         The beautiful matte and shimmery shades of  the perfect cheeky pop of colour for every skin tone. Shape and
+                          highlight your best facial features.</p>
+                    <div class="quantity-selector">
+                        <p class="detail">Quantity:</p>
+                        <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+                    </div>
+                    <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+                </div>
+            </div>
+            <a href="#" class="close-button">&times;</a>
+        </div>
+           
+    <div id="eye3-popup" class="modal">
+        <div class="item-popup">
+            <div><img src="./image/eye-3.jpg" alt="" class="img-responsive"></div>
+            <div class="product-desc">
+                <h4>Multi-Face Palette</h4>
+                <p class="detail">Brand: PINKFLASH<br>
+                Price: Rs. 1190.00<br>
+                Product Code: E-03</p>
+                <p style="text-align: justify;">PinkFlash Multiple Face Palette (Eyeshadow + Blush + Highlighter) –
+                     Mandarin Latte Practical Face Palette, Contains The Eyeshadow, The Blush, The Contouring And 
+                     The Highlight. One Palette Has Multi-Purpose, Convenient And Efficient. Velvety-Soft Powder that
+                      feels Lightweight does not hurt the Skin and Easy To Blend. </p>
+                <div class="quantity-selector">
+                    <p class="detail">Quantity:</p>
+                    <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+                </div>
+                <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+            </div>
+        </div>
+        <a href="#" class="close-button">&times;</a>
+    </div>
+    <div id="eye1-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/eye-1.jpg" alt="Liquid Pen Eyeliner" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>Liquid Pen Eyeliner</h4>
+            <p class="detail">Brand: PINKFLASH<br>
+            Price: Rs. 525.00<br>
+            Product Code: E-01</p>
+            <p style="text-align: justify;">Introducing our new Liquid Pen Eyeliner - 
+                the perfect tool for achieving precise lines for your desired eye look.
+                 The waterproof formula ensures long-lasting wear, while the fine tip allows for easy application.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="face5-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/face5.jpg" alt="Contour Kit" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>Contour Kit</h4>
+            <p class="detail">Brand: COLOURPOP<br>
+            Price: Rs. 870.00<br>
+            Product Code: F-05</p>
+            <p style="text-align: justify;">Achieve the perfect contour with our Contour Kit. 
+                This palette includes shades for contouring, highlighting, and bronzing, allowing you
+                 to sculpt and define your features effortlessly.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="lips2-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/lips-2.jpg" alt="Care Plus Lip Oil" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>Care Plus Lip Oil</h4>
+            <p class="detail">Brand: PINKFLASH<br>
+            Price: Rs. 280.00<br>
+            Product Code: L-02</p>
+            <p style="text-align: justify;">PINKFLASH Product PINKFLASH Lip Oil 5 Natural Ingredients Moisturize Lip Gloss Lipstick Repair Waterproof Lip Oil</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="lips7-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/lips-7.jpg" alt="Lip Scrub & Lip Mask" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>Lip Scrub & Lip Mask</h4>
+            <p class="detail">Brand: COLOURPOP<br>
+            Price: Rs. 800.00<br>
+            Product Code: L-07</p>
+            <p style="text-align: justify;">Lip scrub & lip mask dup delivers instant hydration and nourishment for a supple, super-soft pout. Formulated with Peach Extract to soften lips plus Coconut Water & Hyaluronic Acid to replenish moisture and hydrate. Lips are left ultra-smooth and nourished.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="face3-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/face-3.jpg" alt="Matte Foundation" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>Matte Foundation</h4>
+            <p class="detail">Brand: PINKFLASH<br>
+            Price: Rs. 550.00<br>
+            Product Code: F-03</p>
+            <p style="text-align: justify;">The makeup effect is natural and it lasts for 24 hours, which is biggest advantage. It is suitable for every girl who wants to create a “No Makeup” makeup look. High coverage is the biggest superpower I have, which can help PINKFLASH girls easily cover blemishes such as acne, pores, and red blood silk. Special ingredients for an extreme matte finish and super oil control, let your makeup look even the nights are better. Weightless and long-lasting, matte and waterproof, super ductile, and high coverage.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="eye4-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/eye-4.jpg" alt="Eyeshadow Palette" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>Eyeshadow Palette</h4>
+            <p class="detail">Brand: PINKFLASH<br>
+            Price: Rs. 1050.00<br>
+            Product Code: E-04</p>
+            <p style="text-align: justify;">Create endless eye looks with our Eyeshadow Palette. This versatile palette features a range of shades with varying finishes, allowing you to experiment and express your creativity.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="eye2-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/eye-2.jpg" alt="Waterproof Night Mascara" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>Waterproof Night Mascara</h4>
+            <p class="detail">Brand: PINKFLASH<br>
+            Price: Rs. 450.00<br>
+            Product Code: E-02</p>
+            <p style="text-align: justify;">Get voluminous lashes that last all night with our Waterproof Night Mascara. The waterproof formula ensures smudge-proof wear, while the unique brush coats each lash for maximum volume and length.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="lips4-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/lips-4.jpg" alt="2 in 1 Lipstick & Lipsgloss" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>2 in 1 Lipstick & Lipsgloss</h4>
+            <p class="detail">Brand: PINKFLASH<br>
+            Price: Rs. 950.00<br>
+            Product Code: L-04</p>
+            <p style="text-align: justify;">Get the best of both worlds with our 2 in 1 Lipstick & Lipsgloss. This dual-ended product features a creamy lipstick on one end and a shiny lip gloss on the other, allowing you to create multiple lip looks with ease.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="face4-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/face-4.jpg" alt="Mini Foundation" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>Mini Foundation</h4>
+            <p class="detail">Brand: PINKFLASH<br>
+            Price: Rs. 240.00<br>
+            Product Code: F-04</p>
+            <p style="text-align: justify;">Achieve a flawless complexion on-the-go with our Mini Foundation. This travel-friendly foundation provides buildable coverage with a natural finish, perfect for touch-ups throughout the day.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="eye5-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/eye-5.jpg" alt="12 Pan Eyeshadow Palette" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>12 Pan Eyeshadow Palette</h4>
+            <p class="detail">Brand: PINKFLASH<br>
+            Price: Rs. 1650.00<br>
+            Product Code: E-05</p>
+            <p style="text-align: justify;">Take your eye looks to the next level with our 12 Pan Eyeshadow Palette. This versatile palette features a mix of matte, shimmer, and metallic shades, allowing you to create endless eye-catching looks.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="face6-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/face6.jpg" alt="Highlighter Palette" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>Highlighter Palette</h4>
+            <p class="detail">Brand: COLOURPOP<br>
+            Price: Rs. 900.00<br>
+            Product Code: F-06</p>
+            <p style="text-align: justify;">Illuminate your complexion with our Highlighter Palette. This palette features a range of shades with varying finishes, allowing you to customize your glow and achieve a radiant, lit-from-within look.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="eye6-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/eye-6.jpg" alt="BB Cream" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>BB Cream</h4>
+            <p class="detail">Brand: PINKFLASH<br>
+            Price: Rs. 1075.00<br>
+            Product Code: E-06</p>
+            <p style="text-align: justify;">With a dual-ended applicator included, this 2 in 1 Eyebrow Gel & Powder is perfect for on-the-go touch-ups and travel. Achieve professional-looking brows that frame your face and enhance your natural beauty with our versatile eyebrow product.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="lips3-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/lips-3.jpg" alt="Plumping Lip Gloss" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>Velvet Matte Lipstick</h4>
+            <p class="detail">Brand: PINKFLASH<br>
+            Price: Rs. 825.00<br>
+            Product Code: L-03</p>
+            <p style="text-align: justify;">Achieve a flawless matte finish with our Velvet Matte Lipstick. This ultra-pigmented formula glides on smoothly, coating your lips in rich, saturated color that lasts for hours. Infused with moisturizing ingredients, it keeps your lips feeling soft and comfortable all day long.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+<div id="lips5-popup" class="modal">
+    <div class="item-popup">
+        <div><img src="./image/lips-5.jpg" alt="Lip Liner Pencil" class="img-responsive"></div>
+        <div class="product-desc">
+            <h4>Watery Glam Lip Gloss</h4>
+            <p class="detail">Brand: PINKFLASH<br>
+            Price: Rs. 845.00<br>
+            Product Code: L-05</p>
+            <p style="text-align: justify;">Get ready to shine with our Watery Glam Lip Gloss. This high-shine formula delivers a burst of hydration and a glossy finish that lasts all day. This non-sticky lip gloss adds a pop of color and dimension to your lips, leaving them looking plump and luscious. Whether you're going for a natural look or a bold statement, our Watery Glam Lip Gloss has got you covered.</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+            </div>
+            <a href="cart.html" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</a>
+        </div>
+    </div>
+    <a href="#" class="close-button">&times;</a>
+</div>
+    <!-- product modals content-->
+
+    <!-- footer content -->
+    <footer id="footer" style="margin-top: 50px;" data-aos="fade-up"
+    data-aos-duration="1500">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 footer-contact">
+                        <h3>The Look Lab</h3>
+                        <p>
+                            Lahore <br><br>
+                            Punjab <br><br>
+                            Pakistan <br><br>
+                        </p>
+                        <strong>Phone: <strong>+92 3019465090</strong></strong><br>
+                        <strong>Email: <strong>info@thelooklab.com</strong></strong>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 footer-links">
+                        <br class="d-block d-sm-none">
+                       <h4>Useful Links</h4>
+                       <ul>
+                        <li><i class="bx bx-chevron-right"><a href="index.html">Home</a></i></li>
+                        <li><i class="bx bx-chevron-right"><a href="products.html">Products</a></i></li>
+                        <li><i class="bx bx-chevron-right"><a href="about.html">About</a></i></li>
+                        <li><i class="bx bx-chevron-right"><a href="contact.html">Contact</a></i></li>
+                       </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 footer-links">
+                        <h4>Our Social Network</h4>
+                        <p>Reach out to us for any complaints, recommendations or assistance.</p>
+                        <div class="socail-links mt-3">
+                            <a href="https://twitter.com/yeshalkhan" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://www.instagram.com/browngirlyeshal/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/yeshalkhan/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4">
+            <div class="copyright">
+                &copy; Copyright <strong><span>The Look Lab</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <!-- footer content -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+      
+</body>
+</html>
